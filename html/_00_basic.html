@@ -1,0 +1,152 @@
+<!-- > 声明这是一个 HTML5 文档 -->
+<!DOCTYPE html>
+
+<!-- html 标签是 html 文档的根元素，包裹了页面中的所有内容 -->
+<html>
+    <!-- html 文档头，用来存放页面的元数据 -->
+    <head>
+        <meta charset="utf-8">
+        <title>
+            网页的标题，显示在Tab栏
+        </title>
+    </head>
+
+    <!-- 页面的可见内容 -->
+    <body>
+        <div id="top"></div>
+        <h1>
+            1. 一级标题
+            标题最多有6级
+        </h1>
+        <p style="color: blue; font-size: 14px;">
+            外层<br/>段落
+        </p>
+        <!-- 分割线 -->
+        <hr/>
+        <p class="text highlight">
+            内层段落<br/>
+
+            <b>加粗</b>
+            <strong>加粗文本</strong>
+            
+            <i>斜体</i>
+            
+            <b><i>加粗且斜体</i></b>
+            <em>着重</em>
+
+            <br/>
+            2<sup>2</sup>=4
+            <br/>
+            O<sub>2</sub> + 2 * H<sub>2</sub> = 2H<sub>2</sub>O
+            <br/>
+            <big>放大</big>
+            <small>缩小</small>
+
+            <br/>
+            <pre>
+                pre 标签中   可以有多个空格
+                也可以换行
+            </pre>
+
+            <br/>
+            <code>计算机输出</code>
+            <br/>
+            <kbd>键盘输入</kbd>
+
+            <br/>
+            <tt>打字机文本</tt>
+            
+            <br/>
+            <samp>计算机代码样本</samp>
+        </p>
+        <h2>
+            1.1. 二级标题
+        </h2>
+        <!-- A 标签用来饮用一个地址 -->
+        <!-- target _blank 打开一个新的标签页，打开连接 -->
+        <!-- target _blank 在本标签页，打开连接 -->
+        <a href="https://www.bing.com", title="访问bing", target="_blank">bing</a> <br/>
+        <a href="https://www.bing.com", target="_self", class="external-line">bing</a> <br/>
+        <a href="https://www.bing.com", target="_parent", style="color: red; font-size: 20px">bing</a> <br/>
+        <a href="https://www.bing.com", target="_top">bing</a> <br/>
+
+        <!-- 下载 -->
+        <a href="/home/hardstone/图片/v2-fd97171373e2499fd8eb7e6c58f2a9f2_r.png" download>download</a> <br/>
+        <!-- 换行，属于空元素 -->
+        <br/>
+
+        <a href="#top">跳转到顶部</a> <br/>
+        <a href="#end">跳转到底部</a> <br/>
+
+        <!-- 图片，属于空元素 -->
+        <img src="file:///home/hardstone/图片/v2-fd97171373e2499fd8eb7e6c58f2a9f2_r.png" width="344" height="144" alt="用来在图片无法显示时，展示一段文字"/>
+        <img src="/home/hardstone/图片/v2-fd97171373e2499fd8eb7e6c58f2a9f2_r.png" width="344" height="144"/>
+
+        <br/>
+
+        <!-- 输入框，属于空元素,type 为 password -->
+        <input id="这是ID属性" class="为元素指定一个或多个类名用于CSS或JavaScript选择", type="password", placeholder="请输入密码">
+        <br/>
+        <br/>
+         <!-- 输入框，属于空元素,type 为 text  -->
+        <input id="这是ID属性" class="为元素指定一个或多个类名用于CSS或JavaScript选择", type="text", value="hello", required>
+        <br/>
+        <br/>
+         <!-- 输入框，属于空元素,type 为 checkbox  -->
+        <input id="这是ID属性" class="为元素指定一个或多个类名用于CSS或JavaScript选择", type="checkbox", checked>
+        <br/>
+         <!-- 输入框，属于空元素,type 为 checkbox  -->
+        <input id="这是ID属性" class="为元素指定一个或多个类名用于CSS或JavaScript选择", type="radio">
+        
+        <br/>
+         <!-- 输入框，属于空元素,type 为 checkbox  -->
+        <input id="这是ID属性" class="为元素指定一个或多个类名用于CSS或JavaScript选择", type="text", value="不能交互的数据", disabled>
+
+        <br/>
+        <abbr title="HyperText Markup Language">HTML</abbr>
+
+        <!-- data-*：用于存储自定义数据，通常通过 JavaScript 访问。 -->
+        <div data-user-id="1234">userId</div>
+
+        <button onclick="alert('Button cliecked')">Click Me</button>
+        
+        <br/>
+        <div onmouseover="this.style.backgroundColor='yellow'">Hover over me</div>
+
+        <br/>
+        <input type="text" onchange="alert('Value changed!')">
+
+        <br/>
+        <p><bdo dir="rtl">该段落文字从右到左显示。</bdo></p>
+
+        <br/>
+        <a href="style.css" type="text/css">样式表</a>
+
+        <br/>
+        <blockquote>
+            <p>If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.</p>
+            <footer>— J.K. Rowling, Harry Potter and the Goblet of Fire</footer>
+        </blockquote>
+
+        <p>
+            In his famous quote, Einstein said: <q>E=mc<sup>2</sup></q>
+        </p>
+
+        <p><del>这段话需要被删除</del>,<ins>这段话需要下划线</ins></p>
+
+        <br/>
+
+        <cite>引用自论语</cite>
+
+        <br/>
+
+        <dfn>project</dfn> <br/>
+
+        <a href="#">跳转到顶部</a> <br/>
+        <a href="">refresh</a> <br/>
+        <a href="about:blank", role="button">blank</a> <br/>
+
+        <div id="end"></div>
+        <br />
+    </body>
+</html>
