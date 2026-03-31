@@ -1,0 +1,28 @@
+/* ID 选择器 class 选择器*/
+
+/* ID 选择器 */
+#red_card {
+    background-color: red;
+    color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    text-align: center;
+}
+
+/* class 选择器 */
+.blue_card {
+    background-color: blue;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    text-align: center;
+}

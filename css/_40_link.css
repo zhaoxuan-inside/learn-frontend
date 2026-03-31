@@ -1,0 +1,27 @@
+/*
+a:link 未被访问过的连接
+a:visited 被访问过的连接
+a:hover 鼠标指针放在连接上时
+a:active 鼠标点击时
+*/
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(65, 65, 65);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(65, 65, 65);
+    text-decoration: none;
+    background-color: aqua;
+}

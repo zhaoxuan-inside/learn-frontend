@@ -1,0 +1,11 @@
+html {
+    /* backgroup 属性的简写形式，等价于下面所有的其他属性 */
+    background: whitesmoke, url("/home/hardstone/下载/feature-16-1920x1280.jpg"), no-repeat, fixed, center;
+    
+    background-color: antiquewhite;
+    background-image: url("/home/hardstone/下载/feature-16-1920x1280.jpg");
+    background-repeat: no-repeat;
+    /* 设置背景图像是否固定或者随着页面的其余部分滚动。 */
+    background-attachment:fixed;
+    background-position: center;
+}

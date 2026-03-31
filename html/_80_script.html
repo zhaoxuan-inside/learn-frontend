@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="hardstone">
+    </head>
+
+    <p id="demo">hello, world</p>
+
+    <!-- 定一个 js function -->
+    <script>
+        function say_hello() {
+            document.write("Hello, World!");
+        }
+        
+        function replace_color() {
+            document.getElementById("demo").innerText = "这是一个新的标题";
+            document.getElementById("demo").style.color = "red";
+        }
+    </script>
+
+    <noscript>你的浏览器不支持 JavaScript，或者已禁用 JavaScript。</noscript>
+
+    <button type="button" onclick="say_hello()">say hello</button>
+    <button type="button" onclick="replace_color()">replace color</button>
+
+</html>

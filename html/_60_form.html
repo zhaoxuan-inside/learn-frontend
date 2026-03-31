@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html style="height: 100%;">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="hardstone">
+    </head>
+
+    <body style="height: 100%; margin: 0;">
+        <div style="width: 99%; position: relative; height: 98%;; background-color: antiquewhite;">
+            <form action="/" method="post" style="position: relative; left: 50%; top: 50%;">
+                <label for="name">账号：</label>
+                <input type="text" id="name" name="name" required>
+                
+                <br/>
+
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password" required>
+
+                <br/>
+
+                <label>性别</label>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">男</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">女</label>
+
+                <br/>
+
+                <input type="checkbox" id="subscribe" name="subscribe" checked>
+                <label for="subscribe">订阅</label>
+
+                <br/>
+
+                <label for="country">国籍</label>
+                <select id="country" name="country">
+                    <option value="china">china</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+
+                <br/>
+
+                <input type="submit" value="发射">
+
+            </form>
+        </div>
+    </body>
+</html>

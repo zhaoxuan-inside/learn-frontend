@@ -1,0 +1,20 @@
+/*
+font 属性简写，相当于下面的所有其他属性
+font-size 文本大小
+font-family 字体
+font-weight 字体粗细
+font-variant 字体变体
+font-style 字体样式
+    normal：正常
+    italic：斜体
+    oblique：倾斜
+    inherit：继承父元素的字体样式
+*/
+.buity_word {
+    font: normal normal normal 16px/1.5 "Microsoft YaHei", "微软雅黑", "Microsoft Sans Serif", "宋体", "SimSun", sans-serif, monospace;
+    font-family: "Microsoft YaHei", "微软雅黑", "Microsoft Sans Serif", "宋体", "SimSun", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+}

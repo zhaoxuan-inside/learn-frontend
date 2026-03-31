@@ -1,0 +1,47 @@
+/* 
+color
+text-align 对齐方式
+    center - 居中对齐
+    left - 左对齐
+    right - 右对齐
+    justify - 两端对齐
+text-decoration 文本装饰
+    none - 无装饰
+    underline - 下划线
+    overline - 上划线
+    line-through - 删除线
+text-transform 文本转换
+    none - 不转换
+    capitalize - 首字母大写
+    uppercase - 全部大写
+    lowercase - 全部小写
+text-indent 文本缩进
+    例如：text-indent: 2em; 表示首行缩进两个字符的宽度
+text-shadow 文本阴影
+    例如：text-shadow: 2px 2px 5px rgba(0,0,0,0.3); 表示文本阴影向右下偏移2像素，模糊半径为5像素，颜色为半透明黑色
+letter-spacing 字符间距
+    例如：letter-spacing: 0.1em; 表示字符之间增加0.1个字符宽度的间距
+word-spacing 单词间距
+    例如：word-spacing: 0.2em; 表示单词之间增加0.2个字符宽度的间距
+line-height 行高
+    例如：line-height: 1.5; 表示行高为字体大小的1.5倍
+white-space 空白处理
+    normal - 默认，连续空白合并为一个，文本换行
+    nowrap - 连续空白合并为一个，文本不换行
+    pre - 保留所有空白，文本不换行
+    pre-wrap - 保留所有空白，文本换行
+    pre-line - 连续空白合并为一个，文本换行 
+*/
+
+.art_text {
+    color: #131212;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-indent: 0em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
