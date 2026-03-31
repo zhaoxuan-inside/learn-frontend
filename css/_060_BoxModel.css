@@ -1,0 +1,32 @@
+div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+div.border-box {
+    width: 98%;
+    border: 1px solid black;
+}
+
+div.border-box {
+    width: 98%;
+    border: 1px solid black;
+    border-style: dotted;
+}
+
+div.border-groove {
+    width: 98%;
+    border: 1px solid black;
+    border-style: groove;
+}
+
+div.border-cite {
+    border-left: 10px solid red;
+    border-right-width: 0px;
+    border-top: solid 1px red;
+    border-bottom: solid 1px red;
+    border-left: none;
+    background-color: pink;
+}

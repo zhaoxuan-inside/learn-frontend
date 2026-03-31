@@ -1,0 +1,25 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    background-color: grey;
+    color: white;
+}
+
+td {
+    text-align: right;
+    height: 50px;
+    vertical-align: bottom;
+    padding: 15px;
+}
+
