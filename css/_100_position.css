@@ -1,0 +1,31 @@
+/* 静态，位置的默认值， */
+div.static {
+    position: static;
+    border: 3px solid red;
+    left: 50px;
+    top: 50px;
+}
+
+/* 固定定位，相对于整个页面 */
+div.fixed {
+    position: fixed;
+    border: 3px solid blue;
+    left: 50px;
+    top: 50px;
+}
+
+/* 相对定位，相对于其正常位置 */
+div.relative {
+    position: relative;
+    border: 3px solid green;
+    left: 50px;
+    top: 50px;
+}
+
+/* 绝对定位，相对于最近的已定位祖先元素 */
+div.absolute {
+    position: absolute;
+    border: 3px solid orange;
+    left: 50px;
+    top: 50px;
+}

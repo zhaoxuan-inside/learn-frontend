@@ -1,0 +1,22 @@
+p {
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+
+
+p.visible {
+    overflow: visible;
+}
+
+p.hidden {
+    overflow: hidden;
+}
+
+p.scroll {
+    overflow: scroll;
+}
+
+p.auto {
+    overflow: auto;
+}

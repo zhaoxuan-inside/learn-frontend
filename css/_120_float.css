@@ -1,0 +1,23 @@
+div {
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+img.to_left {
+    float: left;
+    background-color: lightblue;
+    opacity: 0.8; 
+}
+
+img.to_right {
+    float: right;
+    background-color: lightgreen;
+    opacity: 0.8; 
+}
