@@ -1,0 +1,48 @@
+/* first-line 伪元素只能用于块级元素 */
+
+/* 
+支持的属性：
+font properties
+color properties 
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+ */
+p:first-line {
+    color: red;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+/*
+支持的属性：
+font properties
+color properties 
+background properties
+margin properties
+padding properties
+border properties
+text-decoration
+vertical-align (only if "float" is "none")
+text-transform
+line-height
+float
+clear
+*/
+p:first-letter {
+    color: blue;
+    font-size: 50px;
+}
+
+h1:before {
+    content: url("/home/hardstone/下载/firefox.png");
+}
+
+h1:after {
+    content: url("/home/hardstone/下载/firefox.png");
+}
