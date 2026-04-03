@@ -1,0 +1,33 @@
+ul.navigate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.navigate {
+    float: left;
+    width: 100px;
+
+}
+
+a.navigate {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a.navigate:hover {
+    background-color: #111;
+}
+
+a.navigate.active {
+    background-color: #4CAF50;
+    color: black;
+}

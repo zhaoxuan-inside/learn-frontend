@@ -11,3 +11,7 @@ display 控制 html 元素的类型
 p.block_ele {
     display: block;
 }
+
+p.inline_ele {
+    display: inline;
+}
