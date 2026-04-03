@@ -1,0 +1,6 @@
+p {
+    width: 70%;
+    /* 限制元素的最大宽度 */
+    max-width: 500px;
+    margin: auto;
+}

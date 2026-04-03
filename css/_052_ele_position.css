@@ -1,0 +1,41 @@
+/*
+position 属性规定应用于元素的定位方法的类型
+    static 静态位置，静态位置不受top，bottom等位置属性的影响
+    relative 相对位置，元素相对于其正常位置进行定位。设置相对定位的元素的 top、right、bottom 和 left 属性将导致其偏离其正常位置进行调整。不会对其余内容进行调整来适应元素留下的任何空间。
+    fixed 固定位置，元素相对于浏览器窗口进行定位。
+    absolute 绝对位置，元素相对于其最近的已定位祖先元素进行定位。
+    sticky 粘性位置，元素根据用户的滚动位置进行定位。
+*/
+
+div.static {
+    position: static;
+    border: 3px solid wheat;
+    background-color: antiquewhite;
+}
+
+div.relative {
+    position: relative;
+    left: 10%;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    border: 3px solid blanchedalmond
+}
+
+div.absolute {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    border: 3px solid blanchedalmond
+}
+
+h1.sticky {
+    position: sticky;
+    top: 10px;
+    text-align: center;
+}

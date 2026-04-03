@@ -1,0 +1,57 @@
+/* 
+border 边框属性
+    npx 边框宽度
+    solid 
+    black 边框颜色
+
+width 宽度
+border-collapse 边框合并
+
+*/
+
+table, th, tr, td {
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+/*
+text-align 文本水平对齐方式
+    center 居中
+    left 左对齐
+    right 右对齐
+vertical-align 文本垂直对齐方式
+    middle 中间
+    bottom 底部
+padding 文本距离边框的距离
+border-bottom 底部分界线
+*/
+th, td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+/*
+表格斑马纹，通过 nth-child 选择器为奇数行显示不同的背景色
+*/
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+/*
+行，鼠标悬停显示
+*/
+tr:hover {
+    background-color: rgb(167, 33, 33);
+
+}
+
+/*
+表头样式
+*/
+th {
+    background-color: #4CAF50;
+    color: whitesmoke;
+}
