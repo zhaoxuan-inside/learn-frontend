@@ -1,0 +1,85 @@
+# 选择器
+1. 基础选择器
+    1.1. 通配符选择器
+    1.2. 元素选择器
+    1.3. 类选择器
+    1.4. ID 选择器
+2. 组合选择器
+    2.1. 后端选择器
+    2.2. 子选择器
+    2.3. 相邻兄弟选择器
+    2.4. 通用兄弟选择器
+3. 属性选择器
+    3.1. 属性选择
+    3.2. 属性值选择
+    3.3. 属性值单词选择
+    3.4. 属性值前缀选择
+    3.5. 属性值后缀选择
+    3.6. 属性值内容任意选择
+4. 伪类选择器
+    4.1. 位置相关
+        4.1.1. :first-child
+        4.1.2. :last-child
+        4.1.3. :nth-child[n]
+        4.1.4. :nth-of-type[n]
+        4.1.5. :only-child
+        4.1.6. :first-of-type
+        4.1.7. :last-of-type
+        4.1.8. :only-of-type
+    4.2. 链接/动作
+        4.2.1. :link
+        4.2.2. :visited
+        4.2.3. :hover
+        4.2.4. :active
+        4.2.5. :focus
+        4.2.6. :target
+    4.3. 表单状态
+        4.3.1. ：enabled
+        4.3.2. :disabled
+        4.3.3. :checked
+        4.3.4. :required
+        4.3.5. :optional
+        4.3.6. :valid
+        4.3.7. :invalid
+        4.3.8. :in-range
+        4.4.9. :out-of-range
+    4.4. 否定/空/根
+        4.4.1. :not[selector]
+        4.4.2. :empty
+        4.4.3. :root
+    4.5. 其他
+        4.5.1. :lang[language]
+        4.5.2. :read-only
+        4.5.3. :read-write
+5. 伪元素选择器
+    5.1. ::first-line
+        - 首行
+    5.2. ::first-letter
+        - 首字母
+    5.3. ::before
+        - 内容前插入生成内容
+    5.4. ::after
+        - 内容后插入生成内容
+    5.5. ::selection
+        - 用户选中的部分
+    5.6. ::placeholder
+        - 输入框占位文本
+    5.7. ::marker
+        - 列表项标记
+6. 现代新增选择器
+    6.1. :is[selector-list]
+    6.2. :where[selector-list]
+    6.3. :has[relative-selector]
+    6.4. :not[selector-list]
+    6.5. 网格/排列
+        6.5.1 :nth-child[(a * n + b) of selector-list]
+        6.5.2 :nth-child[(a * n + b) of selector-list]
+
+# 优先级
+## 1. 优先级计算基础（四元组）
+1. CSS 优先级用一个四元组表示
+    A. 内联样式
+    B. ID 选择器
+    C. 类、伪类、属性选择器
+    D. 元素、伪元素选择器
+2. 四元组从左到右逐级比较，数值大的优先级高；全相同则后出现的覆盖先出现的。
