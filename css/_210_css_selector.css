@@ -1,0 +1,19 @@
+/* 带有 target 属性的元素 */
+a[target] {
+    background-color: antiquewhite;
+}
+
+/* target 属性为 _value 的元素 */
+a[target="_value"] {
+    background-color: aqua;
+}
+
+/* target 属性包含 flower 的元素 */
+a[target="~flower"] {
+    background-color: black;
+}
+
+/* target 属性以 top 开头的元素 */
+a[targer|="top"] {
+    background-color: blue;
+}
