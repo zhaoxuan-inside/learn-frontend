@@ -1,19 +1,39 @@
-/* 带有 target 属性的元素 */
-a[target] {
+p[class] {
+    background-color: aliceblue;
+}
+
+p[class="match"] {
     background-color: antiquewhite;
 }
 
-/* target 属性为 _value 的元素 */
-a[target="_value"] {
+p[class|="prefix"] {
     background-color: aqua;
 }
 
-/* target 属性包含 flower 的元素 */
-a[target="~flower"] {
+p[class$="suffix"] {
+    background-color: blue;
+}
+
+p[class*="inc"] {
+    background-color: green;
+}
+
+p[class~="word"] {
+    background-color: bisque;
+}
+
+.prefix-match {
     background-color: black;
 }
 
-/* target 属性以 top 开头的元素 */
-a[targer|="top"] {
-    background-color: blue;
+.match-suffix {
+    background-color: black;
+}
+
+.include-word {
+    background-color: black;
+}
+
+p {
+    background-color: pink
 }
