@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* 把 flex 容器内的子元素从默认的“水平一行”改为“垂直一列”排列。 */
+    margin: 0 3px;  /* 左右留边，不影响垂直总高度 */
+}
+
+.header {
+    background-color: lightgray;
+    height: 15%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.navigate {
+    background-color: lightgray;
+    height: 5%;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* 三列内容区使用 flex 水平排列 */
+.content-row {
+    display: flex;
+    flex: 1;
+    margin-bottom: 5px;
+    min-height: 0;    /* 防止flex子项溢出 */
+    overflow: auto;
+}
+
+.content {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+.content-left {
+    width: 20%;
+}
+
+.content-middle {
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.content-right {
+    width: 15%;
+}
+
+.footer {
+    width: 100%;
+    height: 2%;
+    text-align: center;
+    background-color: lightgray;
+}
