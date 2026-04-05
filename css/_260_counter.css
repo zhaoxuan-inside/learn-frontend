@@ -1,0 +1,21 @@
+body {
+    counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h1::after {
+    counter-increment: subsection;
+    content: "Section " counter(subsection) ": ";
+}
+
+h2::after {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+}
+
+p {
+    counter-reset: 
+}

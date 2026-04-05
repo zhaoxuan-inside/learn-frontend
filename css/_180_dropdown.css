@@ -9,6 +9,7 @@
 
 .nav-menu li {
   position: relative;  /* 为绝对定位的下拉菜单提供参考 */
+  min-width: 100px;
 }
 
 .nav-menu a {
@@ -26,7 +27,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  min-width: 160px;
   display: none;
 }
 
