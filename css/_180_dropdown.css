@@ -1,0 +1,41 @@
+/* 基础重置 */
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: #333;
+}
+
+.nav-menu li {
+  position: relative;  /* 为绝对定位的下拉菜单提供参考 */
+}
+
+.nav-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #444;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 160px;
+  display: none;
+}
+
+/* hover 时显示下拉菜单 */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* 悬停效果 */
+.nav-menu a:hover {
+  background: #555;
+}
