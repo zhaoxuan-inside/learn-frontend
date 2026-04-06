@@ -139,4 +139,5 @@ window.addEventListener('[event]', () => {
         - postMessage
 ### 2. 网络请求
     2.1. **一般** 不允许使用 `XMLHttpRequest` 或 `fetch()` 发起请求；  // 除非目标服务器明确允许
-    2.2. 
+    2.2. 即使请求成功，脚本也无法读取响应内容；
+        - 
