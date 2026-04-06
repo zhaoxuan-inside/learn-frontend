@@ -2,7 +2,7 @@ function hello_callback (callBack, ...strings) {
     
     var result = "";
 
-    for (let str of strings) {
+    for (let str in strings) {
         result = result + str;
     }
 
