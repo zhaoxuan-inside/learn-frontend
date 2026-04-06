@@ -106,22 +106,18 @@ function promise_func(func, ...params) {
 }
 ```
 
-### 异步调用
-```javascript
-async function async_func(func, ...params) {
-  try {
-    return await promise_func(func, ...params);
-  } catch(error) {
-    console.log(error);
-  } final {
-    console.log("end");
-  }
-}
-```
-
 ### 调用
 ```javascript
-console.log(async_func(join_after_delay, "a", "b", "c"));
+(async () => {
+  try {
+    const result = await promise_func(join_after_delay, "a", "b", "c");
+    console.log(result);
+  } catch(error) {
+    console.log(error);
+  } finally {
+    console.log("end");
+  }
+})();
 console.log("hello, async");
 ```
-  结果会先打印"hello, async"，一分钟后打印"a,b,c,"
+  结果会先打印"hello, async"，一分钟后打印"a,b,c," 和 "end";

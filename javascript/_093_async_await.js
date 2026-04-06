@@ -17,15 +17,15 @@ function promise_func(func, ...params) {
   )
 }
 
-async function async_func(func, ...params) {
+(async () => {
   try {
-    return await promise_func(func, ...params);
+    const result = await promise_func(join_after_delay, "a", "b", "c");
+    console.log(result);
   } catch(error) {
     console.log(error);
   } finally {
     console.log("end");
   }
-}
+})();
 
-console.log(async_func(join_after_delay, "a", "b", "c"));
 console.log("hello, async");
