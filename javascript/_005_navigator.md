@@ -29,3 +29,20 @@ CPU 逻辑核心数
 
 ## navigator.connection
 网络连接信息（返回 NetworkInformation 对象，需注意兼容性）
+
+# 常用方法
+
+## navigator.geolocation.getCurrentPosition()
+获取设备当前位置（需用户授权）
+
+## navigator.mediaDevices.getUserMedia()
+请求访问摄像头 / 麦克风
+
+## navigator.clipboard.writeText()
+将文本写入剪贴板
+
+## navigator.sendBeacon()
+异步发送小量数据（常用于页面关闭前的统计上报）
+
+## navigator.vibrate()
+使设备振动（移动端，需用户交互）
