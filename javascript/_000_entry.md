@@ -59,6 +59,7 @@
 ### 窗口打开与关闭
 1. window.open([url], [target], [features])
     - 打开新窗口/标签页，返回新窗口的 window 对象
+    - ⚠️ [跨域问题]()
 2. window.close()
     - 关闭当前窗口（需允许脚本控制）
 3. window.opener
@@ -114,3 +115,28 @@ window.addEventListener('[event]', () => {
     - 历史记录条目改变（与 history.pushState 配合）
 9. error
     - 脚本错误或资源加载失败
+
+
+# 名词解释
+## 同源
+源 = 协议 + 域名 + 端口
+协议、域名、端口存在不同就是`不同源`
+
+## 同源策略
+1. 同源的脚本可以相互访问彼此的资源；
+
+## 跨域
+前提：window.open(url, target, features) 方法可以打开一个新的标签页
+如果新的标签页是`不同源`的，则认为是跨域；
+
+## 跨域限制
+### 1. DOM 访问
+    1.1. 无法读取或修改另一个窗口或 iframe 的 document、window 属性、DOM 元素、全局变量；
+    1.2. 少数无害的方法可以执行
+        - window.close()
+        - window.focus()
+    1.3. 可以进行通信；
+        - postMessage
+### 2. 网络请求
+    2.1. **一般** 不允许使用 `XMLHttpRequest` 或 `fetch()` 发起请求；  // 除非目标服务器明确允许
+    2.2. 
