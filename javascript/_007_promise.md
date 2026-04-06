@@ -76,3 +76,52 @@ promise
     console.log('操作完成');
   });
 ```
+
+# async + await
+async 是 Promise 的语法糖，可以用同步代码的风格来写异步逻辑，底层依赖的仍然是 Promise  
+⭐ **注意**：这里的异步只是为方法指定一个执行的时间，**不是和主逻辑并行**  
+
+## 使用
+### 定义业务方法
+```javascript
+function join_after_delay(...params) {
+  setTimeout(() => {
+    let result = "";
+    for (let param of params) {
+        result += param + ",";
+    }
+    return result;
+  }, 1000);
+}
+```
+
+### 包装 Promise 对象
+```javascript
+function promise_func(func, ...params) {
+  return new Promise(
+    (resolve) => {
+      resolve(func(...params));
+    }
+  )
+}
+```
+
+### 异步调用
+```javascript
+async function async_func(func, ...params) {
+  try {
+    return await promise_func(func, ...params);
+  } catch(error) {
+    console.log(error);
+  } final {
+    console.log("end");
+  }
+}
+```
+
+### 调用
+```javascript
+console.log(async_func(join_after_delay, "a", "b", "c"));
+console.log("hello, async");
+```
+  结果会先打印"hello, async"，一分钟后打印"a,b,c,"
