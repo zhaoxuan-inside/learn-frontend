@@ -35,3 +35,18 @@ if (human.check(1)) {
 }
 
 human.alive();
+
+class Studen extends Human {
+
+    constructor(stu_no, class_no, id, name, age, gender) {
+        super(id, name, age, gender);
+        this.stu_no = stu_no;
+        this.class_no = class_no;
+    }
+
+}
+
+let stu = new Studen('260101', '01', 1, 'lisi', 18, 'female');
+console.log(stu.stu_no)
+console.log(stu.name)
+console.log(stu.check(1))

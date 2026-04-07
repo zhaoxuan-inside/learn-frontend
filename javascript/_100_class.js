@@ -38,3 +38,17 @@ let person = {
 console.log(person.id);
 // 2. [对象]["[属性名]""]
 console.log(person['name']);
+
+// 对象继承
+function Student(stu_no, class_no, id, name, age, gender) {
+    this.stu_no = stu_no;
+    this.class_no = class_no;
+
+    // 调用父类的构造函数，传入 this 将本对象和父类进行绑定，父类的 this 对象就会指向本对象，
+    // 如果传 null 或 undefined ，在**非严格**模式下，相当于父类对象绑定了全局对象
+    Human.call(this, id, name, age, gender);
+}
+
+stu = new Student('260101', '01', 2, 'lisi', 18, 'male');
+
+console.log(stu.id)
