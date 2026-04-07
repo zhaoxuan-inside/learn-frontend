@@ -24,3 +24,17 @@ if (human.check(1)) {
 }
 
 human.alive();
+
+// json 格式定义对象
+let person = {
+    id: 1,
+    name: 'lisi',
+    age: 18,
+    gender: 'female'
+}
+
+// 对象属性访问
+// 1. [对象].[属性名]
+console.log(person.id);
+// 2. [对象]["[属性名]""]
+console.log(person['name']);
